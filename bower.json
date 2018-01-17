@@ -1,12 +1,12 @@
 {
-  "name": "still-by-hand-frontend",
+  "name": "static-web-boot",
   "description": "",
   "main": "index.js",
   "authors": [
     "hrkd <hiroki@hrkd.net>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/hrkd/still-by-hand-frontend",
+  "homepage": "https://github.com/hrkd/static-web-boot",
   "ignore": [
     "**/.*",
     "node_modules",
