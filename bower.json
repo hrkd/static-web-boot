@@ -1,0 +1,20 @@
+{
+  "name": "still-by-hand-frontend",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "hrkd <hiroki@hrkd.net>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/hrkd/still-by-hand-frontend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Ionicons": "ionicons#^2.0.1"
+  }
+}

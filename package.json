@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "jquery": "^2.2.3",
     "jquery-smooth-scroll": "^1.7.2",
+    "ress": "^1.2.2",
+    "swiper": "^4.1.0",
     "woothee": "^1.4.0"
   },
   "scripts": {
+    "init": "bower i",
     "start": "gulp",
     "build": "gulp build"
   },
