@@ -1,21 +1,19 @@
-'use strict'
-
-const gulp        = require('gulp');
+const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const config = require('../config');
 
 // Static server
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', () => {
   browserSync.init({
-    port: 5500,
+    port: config.port,
     server: config.distPath,
     notify: false,
     files: [
-      config.distPath+"**/*.html",
-      config.distPath+"**/*.js",
-      config.distPath+"**/*.css"
+      `${config.distPath}**/*.html`,
+      `${config.distPath}**/*.js`,
+      `${config.distPath}**/*.css`,
     ],
-    ghostMode:false,
-    open: false
+    ghostMode: false,
+    open: true,
   });
 });
