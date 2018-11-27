@@ -1,14 +1,14 @@
-<% function title() { %>
-<title></title>
-<%}; %>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="<%= config.cssPath %>" />
+    <title></title>
+  </head>
 
-<% function styles() { %>
-<%}; %>
-
-<% function content() { %>
-<%}; %>
-
-<% function scripts() { %>
-<% }; %>
-
-<% include layout/_layout %>
+  <body>
+    <script src="<%= config.jsPath %>"></script>
+  </body>
+</html>
