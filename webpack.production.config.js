@@ -1,25 +1,26 @@
 var webpack = require('webpack');
 var path = require('path');
-var glob = require("glob");
+var glob = require('glob');
+var banner = require('./config/banner.js');
 
 module.exports = {
   content: path.resolve(__dirname, 'source'),
   devtool: 'cheap-module-source-map',
-  entry: './source/javascripts/main.js',
+  entry: './source/javascripts/main',
   output: {
     filename: 'bundle.min.js'
   },
   module: {
     loaders: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         loaders: ['babel'],
-        exclude: [/node_modules/,/source\/javascripts\/lib/]
-      },
+        exclude: [/node_modules/]
+      }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.css'],
+    extensions: ['.js']
   },
   /* プラグインの設定 */
   plugins: [
@@ -36,8 +37,7 @@ module.exports = {
         unused: true,
         warnings: true
       }
-    })
+    }),
+    new webpack.BannerPlugin(banner)
   ]
-
-
 };

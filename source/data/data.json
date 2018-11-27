@@ -1,13 +1,1 @@
-{
-  "data": {},
-  "config": {
-    "production": {
-      "cssPath": "/stylesheets/styles.min.css",
-      "jsPath": "/javascripts/bundle.min.js"
-    },
-    "development": {
-      "cssPath": "/stylesheets/styles.css",
-      "jsPath": "/javascripts/bundle.js"
-    }
-  }
-}
+{}

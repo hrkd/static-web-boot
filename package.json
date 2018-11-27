@@ -39,6 +39,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-data": "^1.2.1",
     "gulp-ejs": "^3.0.1",
+    "gulp-header": "^2.0.5",
     "gulp-iconfont": "^8.0.1",
     "gulp-iconfont-css": "^2.1.0",
     "gulp-include": "^2.3.1",

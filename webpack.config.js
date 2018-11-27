@@ -2,15 +2,14 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  entry: './source/javascripts/main.js',
-
+  entry: './source/javascripts/main',
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         loaders: ['babel'],
         exclude: /node_modules/
       }
@@ -20,8 +19,8 @@ module.exports = {
     //new ExtractTextPlugin('style.css', { allChunks: true }),
   ],
   resolve: {
-    extensions: ['', '.css', '.js', '.jsx']
+    extensions: ['.js']
   },
   watch: false,
   devtool: '#eval'
-}
+};
